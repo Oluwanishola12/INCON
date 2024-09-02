@@ -1,5 +1,5 @@
 /********** Template CSS **********/
-.root {
+:root {
     --primary: #FEA116;
     --light: #F1F8FF;
     --dark: #0F172B;
@@ -172,7 +172,7 @@
     background: var(--primary);
 }
 
-.section-title.after {
+.section-title::after {
     position: absolute;
     content: "";
     width: 45px;
@@ -183,8 +183,8 @@
     background: var(--primary);
 }
 
-.section-title.text-start.before,
-.section-title.text-end.after {
+.section-title.text-start::before,
+.section-title.text-end::after {
     display: none;
 }
 
@@ -202,7 +202,7 @@
     transition: .5s;
 }
 
-.service-item.hover {
+.service-item:hover {
     background: var(--primary);
 }
 
@@ -219,9 +219,9 @@
     transition: .5s;
 }
 
-.service-item.hover i,
-.service-item.hover h5,
-.service-item.hover p {
+.service-item:hover i,
+.service-item:hover h5,
+.service-item:hover p {
     color: #FFFFFF !important;
 }
 
@@ -401,7 +401,7 @@
     transition: .5s;
 }
 
-.team-item.hover {
+.team-item:hover {
     border-color: var(--secondary) !important;
 }
 
@@ -409,7 +409,7 @@
     background: var(--secondary) !important;
 }
 
-.team-item.hover .bg-primary i {
+.team-item:hover .bg-primary i {
     color: var(--secondary) !important;
 }
 
