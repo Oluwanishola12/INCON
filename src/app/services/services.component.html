@@ -6,7 +6,7 @@
         <div class="row gx-0">
             <div class="col-lg-3 bg-dark d-none d-lg-block">
                 <a  class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                    <img src="assets/img/inn.jpg" alt="">
+                    <img style="width: 90px; height: 60px;" src="assets/img/inn.jpg" alt="">
                     
                 </a>
             </div>
@@ -15,7 +15,7 @@
                     <div class="col-lg-7 px-5 text-start">
                         <div class="h-100 d-inline-flex align-items-center py-2 me-4">
                             <i class="fa fa-envelope text-primary me-2"></i>
-                            <p class="mb-0">info@inconproperties.com</p>
+                            <p class="mb-0">info@inconrealty.com</p>
                         </div>
                         <div class="h-100 d-inline-flex align-items-center py-2">
                             <i class="fa fa-phone-alt text-primary me-2"></i>
@@ -34,7 +34,7 @@
                 </div>
                 <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
                     <a  class="navbar-brand d-block d-lg-none">
-                        <img style="width: 80px;" src="assets/img/inn.jpg" alt="">
+                        <img style="width: 90px; height: 60px;" src="assets/img/inn.jpg" alt="">
                     </a>
                     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
@@ -46,7 +46,16 @@
                             <a  class="nav-item nav-link" routerLink="/properties">Properties</a>
                             <a  class="nav-item nav-link" routerLink="/about">About</a>
                           
-  
+  <!-- Dropdown for Gallery -->
+  <div class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="galleryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Gallery
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+        <li><a class="dropdown-item" routerLink="/flyers">Flyers</a></li>
+        <li><a class="dropdown-item" routerLink="/pictures">Pictures</a></li>
+    </ul>
+</div>
                             
                             <a  class="nav-item nav-link" routerLink="/contact">Contact</a>
                         </div>
@@ -72,9 +81,11 @@
       
 
     <div style="margin-left: 30px;" class="col-md-6 col-lg-4">
-                    
-        <img style="width: 300px; height: 200px;" src="assets\img\under C.jpeg" alt="">
-     </div>
+        <!-- Wrap the image with an anchor tag for downloading -->
+        <a href="assets/img/under C.jpeg" download="image.jpeg">
+            <img class="hover-animate" style="width: 300px; height: 200px;" src="assets/img/under C.jpeg" alt="Downloadable Image">
+        </a>
+    </div>
 
 
 <br>
